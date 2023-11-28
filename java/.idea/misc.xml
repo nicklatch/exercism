@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/lasagna" />
+    <file type="web" url="file://$PROJECT_DIR$/annalyns-infiltration" />
+    <file type="web" url="file://$PROJECT_DIR$/bob" />
+    <file type="web" url="file://$PROJECT_DIR$/bottle-song" />
+    <file type="web" url="file://$PROJECT_DIR$/cars-assemble" />
+    <file type="web" url="file://$PROJECT_DIR$/difference-of-squares" />
+    <file type="web" url="file://$PROJECT_DIR$/gigasecond" />
+    <file type="web" url="file://$PROJECT_DIR$/grains" />
+    <file type="web" url="file://$PROJECT_DIR$/leap" />
+    <file type="web" url="file://$PROJECT_DIR$/log-levels" />
+    <file type="web" url="file://$PROJECT_DIR$/markdown" />
+    <file type="web" url="file://$PROJECT_DIR$/micro-blog" />
+    <file type="web" url="file://$PROJECT_DIR$/pangram" />
+    <file type="web" url="file://$PROJECT_DIR$/phone-number" />
+    <file type="web" url="file://$PROJECT_DIR$/pop-count" />
+    <file type="web" url="file://$PROJECT_DIR$/raindrops" />
+    <file type="web" url="file://$PROJECT_DIR$/roman-numerals" />
+    <file type="web" url="file://$PROJECT_DIR$/salary-calculator" />
+    <file type="web" url="file://$PROJECT_DIR$/square-root" />
+    <file type="web" url="file://$PROJECT_DIR$/squeaky-clean" />
+    <file type="web" url="file://$PROJECT_DIR$/tim-from-marketing" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" project-jdk-name="liberica-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

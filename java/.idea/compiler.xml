@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="leap" target="21" />
+      <module name="leap.main" target="21" />
+      <module name="leap.test" target="21" />
+      <module name="pangram" target="21" />
+      <module name="pangram.main" target="21" />
+      <module name="pangram.test" target="21" />
+      <module name="phone-number" target="21" />
+      <module name="phone-number.main" target="21" />
+      <module name="phone-number.test" target="21" />
+      <module name="tim-from-marketing" target="21" />
+      <module name="tim-from-marketing.main" target="21" />
+      <module name="tim-from-marketing.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
