@@ -1,1 +1,9 @@
-{"track":"gleam","exercise":"hello-world","id":"4d82762ba03f476c9ee9cc64b8b8603f","url":"https://exercism.org/tracks/gleam/exercises/hello-world","handle":"nicklatch","is_requester":true,"auto_approve":false}
+{
+    "track": "gleam",
+    "exercise": "hello-world",
+    "id": "4d82762ba03f476c9ee9cc64b8b8603f",
+    "url": "https://exercism.org/tracks/gleam/exercises/hello-world",
+    "handle": "nicklatch",
+    "is_requester": true,
+    "auto_approve": false
+}
