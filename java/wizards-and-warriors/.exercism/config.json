@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "himanshugoyal1065"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/Fighter.java"
+    ],
+    "test": [
+      "src/test/java/FighterTest.java"
+    ],
+    "exemplar": [
+      ".meta/src/reference/java/Fighter.java"
+    ],
+    "invalidator": [
+      "build.gradle"
+    ]
+  },
+  "forked_from": [
+    "csharp/wizards-and-warriors"
+  ],
+  "blurb": "Learn about inheritance by creating an RPG."
+}
