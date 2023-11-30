@@ -4,18 +4,10 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/markdown" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/logs-logs-logs" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/markdown" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/salary-calculator" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/salary-calculator" />
+            <option value="$PROJECT_DIR$/logs-logs-logs" />
           </set>
         </option>
       </GradleProjectSettings>

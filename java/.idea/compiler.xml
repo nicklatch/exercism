@@ -2,15 +2,45 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="annalyns-infiltration" target="21" />
+      <module name="annalyns-infiltration.main" target="21" />
+      <module name="annalyns-infiltration.test" target="21" />
+      <module name="bottle-song" target="21" />
+      <module name="bottle-song.main" target="21" />
+      <module name="bottle-song.test" target="21" />
+      <module name="cars-assemble" target="21" />
+      <module name="cars-assemble.main" target="21" />
+      <module name="cars-assemble.test" target="21" />
+      <module name="difference-of-squares" target="21" />
+      <module name="difference-of-squares.main" target="21" />
+      <module name="difference-of-squares.test" target="21" />
       <module name="leap" target="21" />
       <module name="leap.main" target="21" />
       <module name="leap.test" target="21" />
+      <module name="log-levels" target="21" />
+      <module name="log-levels.main" target="21" />
+      <module name="log-levels.test" target="21" />
+      <module name="micro-blog" target="21" />
+      <module name="micro-blog.main" target="21" />
+      <module name="micro-blog.test" target="21" />
       <module name="pangram" target="21" />
       <module name="pangram.main" target="21" />
       <module name="pangram.test" target="21" />
       <module name="phone-number" target="21" />
       <module name="phone-number.main" target="21" />
       <module name="phone-number.test" target="21" />
+      <module name="raindrops" target="21" />
+      <module name="raindrops.main" target="21" />
+      <module name="raindrops.test" target="21" />
+      <module name="reverse-string" target="21" />
+      <module name="reverse-string.main" target="21" />
+      <module name="reverse-string.test" target="21" />
+      <module name="salary-calculator" target="21" />
+      <module name="salary-calculator.main" target="21" />
+      <module name="salary-calculator.test" target="21" />
+      <module name="squeaky-clean" target="21" />
+      <module name="squeaky-clean.main" target="21" />
+      <module name="squeaky-clean.test" target="21" />
       <module name="tim-from-marketing" target="21" />
       <module name="tim-from-marketing.main" target="21" />
       <module name="tim-from-marketing.test" target="21" />
