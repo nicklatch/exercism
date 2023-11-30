@@ -19,14 +19,14 @@ pub type Genre {
 pub type Activity {
   BoardGame
   Chill
-  Moive(Genre)
+  Movie(Genre)
   Restaurant(Cuisine)
   Walk(distance: Int)
 }
 
 pub fn rate_activity(activity: Activity) -> Approval {
   case activity {
-    Moive(Romance) -> Yes
+    Movie(Romance) -> Yes
     Restaurant(cuisine) -> {
       case cuisine {
         Korean -> Yes
