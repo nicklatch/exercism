@@ -1,14 +1,11 @@
-// TODO: please define the 'Coach' type
 pub type Coach {
   Coach(name: String, former_player: Bool)
 }
 
-// TODO: please define the 'Stats' type
 pub type Stats {
   Stats(wins: Int, losses: Int)
 }
 
-// TODO: please define the 'Team' type
 pub type Team {
   Team(name: String, coach: Coach, stats: Stats)
 }
@@ -34,9 +31,5 @@ pub fn is_same_team(home_team: Team, away_team: Team) -> Bool {
 }
 
 pub fn root_for_team(team: Team) -> Bool {
-  team.coach.name == "Gregg Popovich"
-  || team.coach.former_player
-  || team.name == "Chicago Bulls"
-  || team.stats.wins >= 60
-  || team.stats.losses > team.stats.wins
+  team.coach.name == "Gregg Popovich" || team.coach.former_player || team.name == "Chicago Bulls" || team.stats.wins >= 60 || team.stats.losses > team.stats.wins
 }
