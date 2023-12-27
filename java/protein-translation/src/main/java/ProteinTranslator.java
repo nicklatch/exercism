@@ -7,6 +7,7 @@ class ProteinTranslator {
         List<String> parsedRnaSequence = List.of(rnaSequence.split("(?<=\\G.{" + 3 + "})"));
         List<String> convertedRnaSequence = new ArrayList<>();
 
+        convert:
         for (String rnaSeq : parsedRnaSequence) {
             switch (rnaSeq) {
                 case "AUG" -> convertedRnaSequence.add("Methionine");
@@ -16,8 +17,8 @@ class ProteinTranslator {
                 case "UAU", "UAC" -> convertedRnaSequence.add("Tyrosine");
                 case "UGU", "UGC" -> convertedRnaSequence.add("Cysteine");
                 case "UGG" -> convertedRnaSequence.add("Tryptophan");
-                default -> {
-                    break;
+                case "UAA", "UAG", "UGA" -> {
+                    break convert;
                 }
             }
         }
