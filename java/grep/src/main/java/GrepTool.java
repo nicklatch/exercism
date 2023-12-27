@@ -6,10 +6,9 @@ import java.util.List;
 
 class GrepTool {
 
-    private final StringBuilder grepFound = new StringBuilder();
-
 
     public String grep(String pattern, List<String> flags, List<String> files) {
+        final StringBuilder grepFound = new StringBuilder();
         String localPattern = flags.contains("-i") ? pattern.toLowerCase() : pattern;
         boolean isSingleton = files.size() == 1;
 
@@ -18,7 +17,7 @@ class GrepTool {
         } else {
             for (String file : files) {
                 try (BufferedReader reader = Files.newBufferedReader(Paths.get(file))) {
-                    lineParsing(reader.lines().toList(), file, localPattern, flags, isSingleton);
+                    lineParsing(reader.lines().toList(), file, localPattern, flags, isSingleton, grepFound);
                 } catch (Exception e) {
                     throw new RuntimeException("Hoopla", e);
                 }
@@ -53,7 +52,7 @@ class GrepTool {
     }
 
 
-    private void lineParsing(List<String> fileLines, String file, String pattern, List<String> flags, Boolean isSingleton) {
+    private void lineParsing(List<String> fileLines, String file, String pattern, List<String> flags, Boolean isSingleton, StringBuilder grepFound) {
         for (String line : fileLines) {
             var localLine = flags.contains("-i") ? line.toLowerCase() : line;
             var isInverted = flags.contains("-v") != (flags.contains("-x") ? localLine.equals(pattern) : localLine.contains(pattern));
