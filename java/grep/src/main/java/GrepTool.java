@@ -59,11 +59,14 @@ class GrepTool {
 
         for (String line : fileLines) {
             String localLine = flags.contains("-i") ? line.toLowerCase() : line;
-            boolean isInverted = flags.contains("-v") != (flags.contains("-x") ? localLine.equals(pattern) : localLine.contains(pattern));
+
+            boolean isInverted = flags.contains("-v") != (flags.contains("-x")
+                            ? localLine.equals(pattern)
+                            : localLine.contains(pattern));
 
             if (isInverted) {
                 if (flags.contains("-n")) {
-                    filteredLines.add(prependLineNumber(line, fileLines.indexOf(line) + 1, file, isSingleton) + "\n");
+                    filteredLines.add(prependLineNumber(line, (fileLines.indexOf(line) + 1), file, isSingleton) + "\n");
                 } else {
                     filteredLines.add(isSingleton ? "%s\n".formatted(line) : "%s:%s\n".formatted(file, line));
                 }
