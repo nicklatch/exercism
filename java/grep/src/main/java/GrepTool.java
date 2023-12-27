@@ -10,7 +10,6 @@ class GrepTool {
 
         final StringBuilder grepFound = new StringBuilder();
 
-
         String localPattern = flags.contains("-i") ? pattern.toLowerCase() : pattern;
         boolean isSingleton = files.size() == 1;
 
