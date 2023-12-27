@@ -1,44 +1,18 @@
-#[derive(Debug)]
-pub struct RainDrops {
-    num: u32,
-    pling: bool,
-    plang: bool,
-    plong: bool,
-}
-
-impl RainDrops {
-    fn new(n: u32) -> Self {
-        Self {
-            num: n,
-            pling: n % 3 == 0,
-            plang: n % 5 == 0,
-            plong: n % 7 == 0,
-        }
-    }
-
-    fn drops(&self) -> String {
-        let mut drops_: Vec<String> = Vec::new();
-
-        if self.pling {
-            drops_.push("Pling".to_string());
-        }
-
-        if self.plang {
-            drops_.push("Plang".to_string());
-        }
-
-        if self.plong {
-            drops_.push("Plong".to_string());
-        }
-
-        if drops_.is_empty() {
-            drops_.push(self.num.to_string());
-        }
-
-        drops_.concat()
-    }
-}
-
+use std::iter::FilterMap;
 pub fn raindrops(n: u32) -> String {
-    RainDrops::new(n).drops()
+    let drops = [
+        if n % 3 == 0 { Some("Pling") } else {None},
+        if n % 5 == 0 { Some("Plang") } else {None},
+        if n % 7 == 0 { Some("Plong") } else {None},
+    ];
+
+    let none_count = drops
+        .iter()
+        .filter(|&sound| sound.is_none())
+        .count();
+
+    match none_count {
+        3 => n.to_string(),
+        _ => FilterMap::collect(drops.iter().filter_map(|&sound| sound))
+    }
 }
