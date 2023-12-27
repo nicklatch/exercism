@@ -7,7 +7,10 @@ import java.util.List;
 
 class GrepTool {
     public String grep(String pattern, List<String> flags, List<String> files) {
+
         final StringBuilder grepFound = new StringBuilder();
+
+
         String localPattern = flags.contains("-i") ? pattern.toLowerCase() : pattern;
         boolean isSingleton = files.size() == 1;
 
@@ -16,7 +19,9 @@ class GrepTool {
         } else {
             for (String file : files) {
                 try (BufferedReader reader = Files.newBufferedReader(Paths.get(file))) {
-                    lineParsing(reader.lines().toList(), file, localPattern, flags, isSingleton).forEach(grepFound::append);
+                    lineParsing(
+                            reader.lines().toList(), file, localPattern, flags, isSingleton).forEach(grepFound::append
+                    );
                 } catch (Exception e) {
                     throw new RuntimeException("Hoopla", e);
                 }
@@ -54,7 +59,9 @@ class GrepTool {
     }
 
 
-    private List<String> lineParsing(List<String> fileLines, String file, String pattern, List<String> flags, Boolean isSingleton) {
+    private List<String> lineParsing(
+            List<String> fileLines, String file, String pattern, List<String> flags, Boolean isSingleton
+    ) {
         List<String> filteredLines = new ArrayList<>();
 
         for (String line : fileLines) {
@@ -77,7 +84,9 @@ class GrepTool {
 
 
     private String prependLineNumber(String line, int lineNumber, String file, boolean isSingleton) {
-        return isSingleton ? "%d:%s".formatted(lineNumber, line) : "%s:%d:%s".formatted(file, lineNumber, line);
+        return isSingleton
+                ? "%d:%s".formatted(lineNumber, line)
+                : "%s:%d:%s".formatted(file, lineNumber, line);
     }
 
 }
