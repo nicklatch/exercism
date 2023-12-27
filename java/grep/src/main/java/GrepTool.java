@@ -52,10 +52,20 @@ class GrepTool {
     }
 
 
-    private void lineParsing(List<String> fileLines, String file, String pattern, List<String> flags, Boolean isSingleton, StringBuilder grepFound) {
+    private void lineParsing(
+            List<String> fileLines,
+            String file,
+            String pattern,
+            List<String> flags,
+            Boolean isSingleton,
+            StringBuilder grepFound
+    ) {
         for (String line : fileLines) {
             var localLine = flags.contains("-i") ? line.toLowerCase() : line;
-            var isInverted = flags.contains("-v") != (flags.contains("-x") ? localLine.equals(pattern) : localLine.contains(pattern));
+
+            var isInverted = flags.contains("-v") != (flags.contains("-x")
+                    ? localLine.equals(pattern)
+                    : localLine.contains(pattern));
 
             if (isInverted) {
                 if (flags.contains("-n")) {
