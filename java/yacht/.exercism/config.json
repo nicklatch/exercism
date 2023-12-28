@@ -1,0 +1,34 @@
+{
+  "authors": [
+    "lemoncurry"
+  ],
+  "contributors": [
+    "FridaTveit",
+    "hgvanpariya",
+    "jmrunkle",
+    "msomji",
+    "muzimuzhi",
+    "SleeplessByte",
+    "sshine"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/Yacht.java"
+    ],
+    "test": [
+      "src/test/java/YachtTest.java"
+    ],
+    "example": [
+      ".meta/src/reference/java/Yacht.java"
+    ],
+    "editor": [
+      "src/main/java/YachtCategory.java"
+    ],
+    "invalidator": [
+      "build.gradle"
+    ]
+  },
+  "blurb": "Score a single throw of dice in the game Yacht.",
+  "source": "James Kilfiger, using wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Yacht_(dice_game)"
+}
