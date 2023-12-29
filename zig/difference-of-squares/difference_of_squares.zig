@@ -1,14 +1,27 @@
 pub fn squareOfSum(number: usize) usize {
-    _ = number;
-    @compileError("compute the sum of i from 0 to n then square it");
+    var i: usize= 0;
+    var sum: usize = 0;
+
+    while (i < number + 1) {
+        sum += i;
+        i += 1;
+    }
+
+    return sum * sum;
 }
 
 pub fn sumOfSquares(number: usize) usize {
-    _ = number;
-    @compileError("compute the sum of i^2 from 0 to n");
+    var i: usize = 0;
+    var sum: usize = 0;
+
+    while (i < number + 1) {
+        sum += (i * i);
+        i += 1;
+    }
+
+    return sum;
 }
 
 pub fn differenceOfSquares(number: usize) usize {
-    _ = number;
-    @compileError("compute the difference between the square of sum and sum of squares");
+    return squareOfSum(number) - sumOfSquares(number);
 }
