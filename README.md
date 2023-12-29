@@ -1,12 +1,12 @@
 # Exercism exercise solutions
 
 Languages:
-- Java
-- JavaScript
-- Rust
-- Gleam
-- F#
-- Elm
-- Python
-- Ocaml
-- And more!
+- [Java](/java)
+- [JavaScript](/javascript)
+- [Rust](/rust)
+- [Gleam](/gleam)
+- [F#](/fsharp)
+- [Elm](/elm)
+- [Python](/python)
+- [Ocaml](/ocaml)
+- [And more!](https://exercism.org/profiles/nicklatch)
