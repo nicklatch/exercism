@@ -7,6 +7,5 @@ Languages:
 - [Gleam](/gleam)
 - [F#](/fsharp)
 - [Elm](/elm)
-- [Python](/python)
 - [Ocaml](/ocaml)
 - [And more!](https://exercism.org/profiles/nicklatch)
