@@ -1,25 +1,10 @@
 pub fn squareOfSum(number: usize) usize {
-    var i: usize= 0;
-    var sum: usize = 0;
-
-    while (i < number + 1) {
-        sum += i;
-        i += 1;
-    }
-
+    const sum = number * (number + 1) / 2;
     return sum * sum;
 }
 
 pub fn sumOfSquares(number: usize) usize {
-    var i: usize = 0;
-    var sum: usize = 0;
-
-    while (i < number + 1) {
-        sum += (i * i);
-        i += 1;
-    }
-
-    return sum;
+    return number * (number + 1) * (2 * number + 1) / 6;
 }
 
 pub fn differenceOfSquares(number: usize) usize {
