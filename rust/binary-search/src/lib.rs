@@ -1,31 +1,16 @@
 pub fn find(array: &[i32], key: i32) -> Option<usize> {
-    if array.is_empty() {
-        return None;
-    }
+    let mut sorted = array.to_vec();
+    sorted.sort();
 
-    let mut sorted_arr = array.to_vec();
-    sorted_arr.sort();
+    let mut left = 0;
+    let mut right = sorted.len();
 
-    let mut start = 0;
-    let mut end = sorted_arr.len() - 1;
-
-    while start <= end {
-        let middle = start + (end - start) / 2;
-
-        if key == sorted_arr[middle] {
-            return Some(middle);
-        }
-
-        if key < sorted_arr[middle] {
-            end = match middle.checked_sub(1) {
-                Some(num) => num,
-                None => break,
-            };
-        } else {
-            start = match middle.checked_add(1) {
-                Some(num) => num,
-                None => break,
-            }
+    while left < right {
+        let mid = left + (right - left) / 2;
+        match sorted[mid].cmp(&key) {
+            std::cmp::Ordering::Less => left = mid + 1,
+            std::cmp::Ordering::Greater => right = mid,
+            std::cmp::Ordering::Equal => return Some(mid),
         }
     }
 
