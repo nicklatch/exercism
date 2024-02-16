@@ -1,6 +1,7 @@
 package booking
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -36,10 +37,21 @@ func IsAfternoonAppointment(date string) bool {
 
 // Description returns a formatted string of the appointment time.
 func Description(date string) string {
-	panic("Please implement the Description function")
+	parsedDate, err := time.Parse("1/2/2006 15:04:05", date)
+	if err != nil {
+		panic("handle me")
+	}
+
+	return fmt.Sprintf("You have an appointment on %s, %s %d, %d, at %d:%d.",
+		parsedDate.Weekday().String(),
+		parsedDate.Month().String(),
+		parsedDate.Day(),
+		parsedDate.Year(),
+		parsedDate.Hour(),
+		parsedDate.Minute())
 }
 
 // AnniversaryDate returns a Time with this year's anniversary.
 func AnniversaryDate() time.Time {
-	panic("Please implement the AnniversaryDate function")
+	return time.Date(time.Now().Year(), time.September, 15, 0, 0, 0, 0, time.UTC)
 }
