@@ -53,12 +53,10 @@ type MeteorologyData struct {
 }
 
 func (md MeteorologyData) String() string {
-	return fmt.Sprintf("%s: %d %s, Wind %s at %d %s, %d%% Humidity",
+	return fmt.Sprintf("%s: %s, Wind %s at %s, %d%% Humidity",
 		md.location,
-		md.temperature.degree,
-		md.temperature.unit.String(),
+		md.temperature.String(),
 		md.windDirection,
-		md.windSpeed.magnitude,
-		md.windSpeed.unit.String(),
+		md.windSpeed.String(),
 		md.humidity)
 }
