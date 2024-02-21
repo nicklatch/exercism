@@ -1,0 +1,10 @@
+ok  raindrops	0.089s
+ok  raindrops	0.074s
+ok  raindrops	0.084s
+ok  raindrops	0.087s
+ok  raindrops	0.076s
+ok  raindrops	0.083s
+ok  raindrops	0.072s
+ok  raindrops	0.087s
+ok  raindrops	0.072s
+ok  raindrops	0.090s

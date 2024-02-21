@@ -16,7 +16,7 @@ func (e InvalidCowsError) Error() string {
 }
 
 // DivideFood accepts a FodderCalculator and int representing the quantity
-// of cows and returns the diveded food amount and an err (if available, else nil)
+// of cows and returns the divided food amount and an err (if available, else nil)
 func DivideFood(fc FodderCalculator, cowQty int) (float64, error) {
 	totalFodder, err := fc.FodderAmount(cowQty)
 	if err != nil {

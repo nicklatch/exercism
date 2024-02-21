@@ -1,0 +1,47 @@
+[
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.074s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.084s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.087s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.076s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.083s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.072s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.087s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.072s"
+  },
+  {
+    "result": "ok",
+    "pkg": "raindrops",
+    "time": "0.090s"
+  }
+]

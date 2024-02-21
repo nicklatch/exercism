@@ -15,7 +15,7 @@ func GenerateWandEnergy() float64 {
 // ShuffleAnimals returns a slice with all eight animal strings in random order.
 func ShuffleAnimals() []string {
 
-	animals := []string{
+	animals := [8]string{
 		"ant",
 		"beaver",
 		"cat",
