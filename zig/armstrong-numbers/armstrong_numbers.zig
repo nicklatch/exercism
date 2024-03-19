@@ -1,8 +1,8 @@
 const std = @import("std");
 const math = std.math;
 
-/// isArmstrongNumber accepts a u128 integer and returns a bool representing
-/// whether or not the sum of each of its digits ^ its length is equal to itself
+/// Accepts a u128 integer and returns a bool representing whether or
+/// not the sum of each of its digits ^ its length is equal to itself
 pub fn isArmstrongNumber(num: u128) bool {
 
     // short circuit check of guarenteed true or false vals
@@ -21,7 +21,7 @@ pub fn isArmstrongNumber(num: u128) bool {
     return arm_sum == num;
 }
 
-/// num_length accpets a u128 integer and returns the number of digits that comprise it.
+/// Accpets a u128 integer and returns the number of digits that comprise it. |
 /// i.e: 128 has a length 3, 1000 has a length of 4, 1 has a length of 1.
 fn num_length(num: u128) u8 {
     var count: u8 = 0;
