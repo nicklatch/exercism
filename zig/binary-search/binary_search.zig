@@ -6,7 +6,6 @@ pub fn binarySearch(comptime T: type, target: T, items: []const T) ?usize {
     while (left < right) {
         const mid = left + (right - left) / 2;
         if (items[mid] == target) return mid;
-
         if (items[mid] < target) {
             left = mid + 1;
         } else {
