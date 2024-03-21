@@ -3,7 +3,7 @@ package listops
 
 import "slices"
 
-// IntList is an abstraction of a list of integers which we can define methods on
+// IntList is an abstraction of a list of integers
 type IntList []int
 
 // Foldl feeds each of its IntList elements, from left to right, into the given closure
@@ -67,8 +67,9 @@ func (s IntList) Map(fn func(int) int) IntList {
 	if len(s) == 0 { // early return for an empty list
 		return s
 	}
-	length := len(s)
-	buffer := make(IntList, length, length)
+	// since we know the length already, we can allocate
+	// our length and capacity up front to avoid allocations
+	buffer := make(IntList, len(s), len(s))
 	for idx, val := range s {
 		buffer[idx] = fn(val)
 	}
