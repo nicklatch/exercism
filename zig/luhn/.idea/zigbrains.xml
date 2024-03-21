@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ZLSSettings">
+    <option name="zlsPath" value="C:\Users\nick.latcham\AppData\Local\Programs\zig\zls.exe" />
+    <option name="initialAutodetectHasBeenDone" value="true" />
+  </component>
+  <component name="ZigProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/AppData/Local/Programs/zig" />
+    <option name="explicitPathToStd" value="C:\Users\nick.latcham\AppData\Local\Programs\zig\lib\std" />
+  </component>
+</project>
