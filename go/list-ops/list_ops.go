@@ -94,7 +94,7 @@ func (s IntList) Append(lst IntList) IntList {
 // IntList returning one flattened list
 func (s IntList) Concat(lists []IntList) IntList {
 	buffer := s
-	slices.Grow(buffer, len(lists))
+	slices.Grow(buffer, len(lists)) // grow the capacity to limit allocations
 	for _, val1 := range lists {
 		buffer = append(buffer, val1...)
 	}
