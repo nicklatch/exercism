@@ -12,7 +12,7 @@ func Age(seconds float64, planet Planet) float64 {
 	case "Venus":
 		return (seconds / 31557600) / 0.61519726
 	case "Earth":
-		return (seconds / 31557600) / 1.0
+		return seconds / 31557600
 	case "Mars":
 		return (seconds / 31557600) / 1.8808158
 	case "Jupiter":
