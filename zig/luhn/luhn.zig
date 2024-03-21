@@ -1,5 +1,6 @@
 const std = @import("std");
 
+/// Returns a bool based on whether `s` can be validated according to the luhn algo
 pub fn isValid(s: []const u8) bool {
     switch (s.len) { // avoid un-needed allocations with early return
         1 => return false,
