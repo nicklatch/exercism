@@ -20,7 +20,7 @@ pub fn isValid(s: []const u8) bool {
         switch (current >= '0' and current <= '9') {
             true => {
                 val = current - '0';
-                if (double_if_odd % 2 == 1) val <<= 1;
+                if (double_if_odd & 1 == 1) val <<= 1; // using a mask to check even/odd
                 if (val > 9) val -= 9;
                 checksum += val;
                 double_if_odd += 1;
