@@ -1,7 +1,37 @@
+// Package strain implements generic functions for
+// filtering slices
 package strain
 
-// Implement the "Keep" and "Discard" function in this file.
+// Keep returns a slice of T containing items
+// that satisfy the filter
+func Keep[T any](items []T, filter func(T) bool) []T {
+	if len(items) == 0 {
+		return items
+	}
 
-// You will need typed parameters (aka "Generics") to solve this exercise.
-// They are not part of the Exercism syllabus yet but you can learn about
-// them here: https://go.dev/tour/generics/1
+	result := make([]T, 0, len(items))
+	for _, val := range items {
+		if filter(val) {
+			result = append(result, val)
+		}
+	}
+
+	return result
+}
+
+// Discard returns a slice of T containing items
+// that do not satisfy the filter
+func Discard[T any](items []T, filter func(T) bool) []T {
+	if len(items) == 0 {
+		return items
+	}
+
+	result := make([]T, 0, len(items))
+	for _, val := range items {
+		if !filter(val) {
+			result = append(result, val)
+		}
+	}
+
+	return result
+}
