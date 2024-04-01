@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "bgottlob"
+  ],
+  "contributors": [
+    "ErikSchierboom",
+    "iHiD",
+    "jkrukoff",
+    "juhlig",
+    "NobbZ"
+  ],
+  "files": {
+    "solution": [
+      "src/list_ops.erl"
+    ],
+    "test": [
+      "test/list_ops_tests.erl"
+    ],
+    "example": [
+      ".meta/example.erl"
+    ]
+  },
+  "blurb": "Implement basic list operations."
+}
