@@ -1,16 +1,31 @@
 open Base
 
-type bst
+type bst = Leaf | Node of bst * int * bst
 
-let empty = failwith "'empty' is missing"
+let empty = Leaf
 
-let value _ = failwith "'value' is missing"
+let value = function
+  | Leaf -> Error "No data present"
+  | Node (_, x, _) -> Ok x
 
-let left _ = failwith "'left' is missing"
+let left = function
+  | Leaf -> Error "No data present"
+  | Node (x, _, _) -> Ok x
 
-let right _ = failwith "'right' is missing"
+let right = function
+  | Leaf -> Error "No data present"
+  | Node (_, _, x) -> Ok x
 
-let insert _ _ = failwith "'insert' is missing"
+let insert value =
+  let rec f = function
+    | Leaf -> Node (Leaf, value, Leaf)
+    | Node (left, v, right) ->
+        if value <= v then Node (f left, v, right)
+        else Node (left, v, f right)
+  in
+  f
 
-let to_list _ = failwith "'to_list' is missing"
-
+let rec to_list = function
+  | Leaf -> []
+  | Node (left, value, right) ->
+      List.concat [to_list left; [value]; to_list right]
