@@ -23,22 +23,25 @@ defmodule BirdCount do
   @spec has_day_without_birds?([] | [non_neg_integer()]) :: boolean()
   def has_day_without_birds?([]), do: false
   def has_day_without_birds?([0 | _other_days]), do: true
-  def has_day_without_birds?([_head | tail]), do: has_day_without_birds?(tail)
+  def has_day_without_birds?([_today | other_days]), do: has_day_without_birds?(other_days)
 
   @doc """
   Returns the total birds seen.
   """
   @spec total([] | [non_neg_integer()]) :: non_neg_integer()
-  def total(list), do: total(list, 0)
-  defp total([], initial), do: initial
-  defp total([head | tail], initial), do: total(tail, head + initial)
+  def total(bird_count_list), do: total(bird_count_list, 0)
+  defp total([], birds), do: birds
+  defp total([today | other_days], birds), do: total(other_days, today + birds)
 
   @doc """
   Returns the numbers of days there 5 or more birds seen.
   """
   @spec busy_days([] | [non_neg_integer()]) :: non_neg_integer()
-  def busy_days(list), do: busy_days(list, 0)
-  defp busy_days([], initial), do: initial
-  defp busy_days([head | tail], initial) when head >= @busy_day, do: busy_days(tail, initial + 1)
-  defp busy_days([_head | tail], initial), do: busy_days(tail, initial)
+  def busy_days(bird_count_list), do: busy_days(bird_count_list, 0)
+  defp busy_days([], busy_total), do: busy_total
+
+  defp busy_days([today | other_days], busy_total) when today >= @busy_day,
+    do: busy_days(other_days, busy_total + 1)
+
+  defp busy_days([_today | other_days], busy_total), do: busy_days(other_days, busy_total)
 end
