@@ -6,8 +6,8 @@ defmodule BirdCount do
   def increment_day_count([head | tail]), do: [head + 1 | tail]
 
   def has_day_without_birds?([]), do: false
-  def has_day_without_birds?([head | tail]) when head != 0, do: has_day_without_birds?(tail)
-  def has_day_without_birds?([head | _tail]) when head == 0, do: true
+  def has_day_without_birds?([0 | _tail]), do: true
+  def has_day_without_birds?([_head | tail]), do: has_day_without_birds?(tail)
 
   def total(list), do: total(list, 0)
   defp total([], initial), do: initial
