@@ -7,6 +7,5 @@
 -spec accumulate(fun((A) -> B), list(A)) -> list(B).
 accumulate(_, []) ->
     [];
-accumulate(Fn, List) ->
-    [H | T] = List,
+accumulate(Fn, [H | T]) ->
     [Fn(H) | accumulate(Fn, T)].
