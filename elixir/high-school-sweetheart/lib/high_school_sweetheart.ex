@@ -1,16 +1,16 @@
 defmodule HighSchoolSweetheart do
   @spec first_letter(String.t()) :: String.t()
   def first_letter(name) do
-    name |> String.replace(["\s", "\n", "\r", "\t"], "") |> String.first()
+    name |> String.trim() |> String.first()
   end
 
   @spec initial(Strting.t()) :: String.t()
-  def initial(name), do: first_letter(String.upcase(name)) <> "."
+  def initial(name), do: name |> first_letter() |> String.upcase() |> Kernel.<>(".")
 
   @spec initials(Strting.t()) :: String.t()
   def initials(full_name) do
     [first_name, last_name] = String.split(full_name)
-    initial(first_name) <> " " <> initial(last_name)
+    "#{initial(first_name)} #{initial(last_name)}"
   end
 
   @spec pair(String.t(), String.t()) :: String.t()
