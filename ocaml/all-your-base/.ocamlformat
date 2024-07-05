@@ -1,0 +1,4 @@
+profile = ocamlformat
+version = 0.26.2
+indicate-multiline-delimiters = no
+break-cases = fit
