@@ -1,0 +1,1262 @@
+
+15:58:49.129 [info] Loading 148 CA(s) from :otp store
+
+15:58:49.362 id=1 [debug] handled request client -> server initialize in 113ms
+
+15:58:49.369 [debug] sent notification server -> client window/logMessage
+
+15:58:49.374 [debug] NextLS v0.23.1 has initialized!
+
+15:58:49.375 [debug] sent notification server -> client window/logMessage
+
+15:58:49.375 [debug] Log file located at /home/nicklatcham/Repos/exercism/elixir/.elixir-tools/next-ls.log
+
+15:58:49.379 [debug] sent notification server -> client window/logMessage
+
+15:58:49.379 [info] [extension] Credo initializing with options %NextLS.InitOpts.Extensions.Credo{enable: true, cli_options: []}
+
+15:58:51.549 [debug] sent notification server -> client window/logMessage
+
+15:58:51.549 [debug] Booting runtimes...
+
+15:58:51.557 id=1666 [debug] sent request server -> client window/workDoneProgress/create
+
+15:58:51.567 [debug] sent notification server -> client $/progress
+
+15:58:51.595 [debug] sent notification server -> client window/logMessage
+
+15:58:51.595 [info] Beginning DB migration...
+
+15:58:51.630 [debug] sent notification server -> client window/logMessage
+
+15:58:51.630 [info] Database is being upgraded from version 0 to 7.
+
+This will trigger a full recompilation in order to re-index your codebase.
+
+
+15:58:51.636 [debug] sent notification server -> client window/logMessage
+
+15:58:51.636 [info] Finished DB migration...
+
+15:58:51.636 [debug] sent notification server -> client window/logMessage
+
+15:58:51.636 [info] Booting runtime for dna-encoding.
+
+- elixir: /home/nicklatcham/.asdf/shims/elixir
+- zombie wrapper script: /home/nicklatcham/.local/share/.burrito/next_ls_erts-15.0_0.23.1/lib/next_ls-0.23.1/priv/cmd
+- working_dir: /home/nicklatcham/Repos/exercism/elixir/dna-encoding
+- command: /home/nicklatcham/.asdf/shims/elixir --no-halt --sname nextls-runtime-1722545931636109332 --cookie OAA6TYMANQMNSHHOJFXLYUZMPBVXMWZLJY462D4HNFCTZYFVU5SQ==== -S mix loadpaths --no-compile
+
+Environment: 
+
+LSP=nextls
+NEXTLS_PARENT_PID=g1h3KW5leHQtbHMtMTcyMjU0NTkyOTE0MDA3MTU2OEBTdGlua1BhZDQyMDY5AAAA4wAAAABmq/cK
+MIX_ENV=dev
+MIX_TARGET=host
+MIX_BUILD_ROOT=.elixir-tools/_build
+ROOTDIR=false
+BINDIR=false
+RELEASE_ROOT=false
+RELEASE_SYS_CONFIG=false
+PATH=/home/nicklatcham/.asdf/shims:/home/nicklatcham/.local/share/.burrito/next_ls_erts-15.0_0.23.1/bin:/home/nicklatcham/.local/share/nvim/mason/bin:/home/nicklatcham/.local/share/nvim/mason/bin:/home/nicklatcham/.bun/bin:/home/nicklatcham/.asdf/shims:/home/nicklatcham/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/nicklatcham/.rocup:/home/nicklatcham/.local/bin
+
+
+15:58:51.637 [debug] handled notification client -> server initialized in 2272ms
+
+15:58:51.653 [debug] handled notification client -> server textDocument/didOpen in 15ms
+
+15:58:52.678 [debug] sent notification server -> client window/logMessage
+
+15:58:52.678 [info] Connected to node nextls-runtime-1722545931636109332@StinkPad42069
+
+15:58:53.956 [debug] sent notification server -> client $/progress
+
+15:58:53.959 [debug] sent notification server -> client window/logMessage
+
+15:58:53.959 [debug] Runtime for folder dna-encoding is ready...
+
+15:58:53.967 id=1698 [debug] sent request server -> client window/workDoneProgress/create
+
+15:58:53.968 [debug] sent notification server -> client $/progress
+
+15:58:54.053 [debug] sent notification server -> client window/logMessage
+
+15:58:54.053 [info] Compiling 1 file (.ex)
+
+
+15:58:54.073 id=70 [debug] sent request server -> client window/workDoneProgress/create
+
+15:58:54.075 [debug] sent notification server -> client $/progress
+
+15:58:54.106 [debug] sent notification server -> client window/logMessage
+
+15:58:54.106 [info]     warning: variable "code_point" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+  2 │   def encode_nucleotide(code_point) do
+    │                         ~~~~~~~~~~
+    │
+    └─ lib/dna.ex:2:25: DNA.encode_nucleotide/1
+
+
+
+15:58:54.107 [debug] sent notification server -> client window/logMessage
+
+15:58:54.107 [info]     warning: variable "encoded_code" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+  6 │   def decode_nucleotide(encoded_code) do
+    │                         ~~~~~~~~~~~~
+    │
+    └─ lib/dna.ex:6:25: DNA.decode_nucleotide/1
+
+
+
+15:58:54.109 [debug] sent notification server -> client window/logMessage
+
+15:58:54.109 [info]     warning: variable "dna" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 10 │   def encode(dna) do
+    │              ~~~
+    │
+    └─ lib/dna.ex:10:14: DNA.encode/1
+
+
+
+15:58:54.112 [debug] sent notification server -> client window/logMessage
+
+15:58:54.112 [info]     warning: variable "dna" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 14 │   def decode(dna) do
+    │              ~~~
+    │
+    └─ lib/dna.ex:14:14: DNA.decode/1
+
+
+
+15:58:54.209 [debug] sent notification server -> client $/progress
+
+15:58:54.259 [debug] sent notification server -> client window/logMessage
+
+15:58:54.259 [info] Generated dna app
+
+
+15:58:54.285 [debug] sent notification server -> client $/progress
+
+15:58:54.286 [debug] sent notification server -> client window/logMessage
+
+15:58:54.286 [info] Compiled dna-encoding!
+
+15:58:54.295 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:58:54.302 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:00:20.758 [debug] handled notification client -> server textDocument/didChange in 9ms
+
+16:00:20.847 [debug] handled notification client -> server textDocument/didChange in 336µs
+
+16:00:20.998 [debug] handled notification client -> server textDocument/didChange in 440µs
+
+16:00:21.147 [debug] handled notification client -> server textDocument/didChange in 362µs
+
+16:00:21.164 [debug] handled notification client -> server textDocument/didChange in 340µs
+
+16:00:30.298 [debug] handled notification client -> server textDocument/didChange in 234µs
+
+16:00:30.648 [debug] handled notification client -> server textDocument/didChange in 255µs
+
+16:00:30.797 [debug] handled notification client -> server textDocument/didChange in 260µs
+
+16:00:30.946 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+16:00:32.166 [debug] handled notification client -> server textDocument/didChange in 906µs
+
+16:00:32.313 [debug] handled notification client -> server textDocument/didChange in 895µs
+
+16:00:32.423 [debug] handled notification client -> server textDocument/didChange in 222µs
+
+16:00:33.066 [debug] handled notification client -> server textDocument/didChange in 386µs
+
+16:00:33.217 [debug] handled notification client -> server textDocument/didChange in 470µs
+
+16:00:34.196 [debug] handled notification client -> server textDocument/didChange in 390µs
+
+16:00:34.315 [debug] handled notification client -> server textDocument/didChange in 371µs
+
+16:00:36.436 [debug] handled notification client -> server textDocument/didChange in 948µs
+
+16:00:36.594 [debug] handled notification client -> server textDocument/didChange in 472µs
+
+16:00:37.385 [debug] handled notification client -> server textDocument/didChange in 256µs
+
+16:00:37.500 [debug] handled notification client -> server textDocument/didChange in 221µs
+
+16:00:38.726 [debug] handled notification client -> server textDocument/didChange in 245µs
+
+16:00:38.876 [debug] handled notification client -> server textDocument/didChange in 252µs
+
+16:00:39.410 [debug] handled notification client -> server textDocument/didChange in 245µs
+
+16:00:39.559 [debug] handled notification client -> server textDocument/didChange in 271µs
+
+16:00:39.708 [debug] handled notification client -> server textDocument/didChange in 253µs
+
+16:00:39.858 [debug] handled notification client -> server textDocument/didChange in 228µs
+
+16:00:39.998 [debug] handled notification client -> server textDocument/didChange in 246µs
+
+16:01:24.260 [debug] handled notification client -> server textDocument/didChange in 287µs
+
+16:01:24.411 [debug] handled notification client -> server textDocument/didChange in 252µs
+
+16:01:24.771 [debug] handled notification client -> server textDocument/didChange in 350µs
+
+16:01:25.178 [debug] handled notification client -> server textDocument/didChange in 254µs
+
+16:01:25.329 [debug] handled notification client -> server textDocument/didChange in 369µs
+
+16:01:25.500 [debug] handled notification client -> server textDocument/didChange in 247µs
+
+16:01:25.649 [debug] handled notification client -> server textDocument/didChange in 283µs
+
+16:01:25.799 [debug] handled notification client -> server textDocument/didChange in 262µs
+
+16:01:25.949 [debug] handled notification client -> server textDocument/didChange in 256µs
+
+16:01:26.238 [debug] handled notification client -> server textDocument/didChange in 255µs
+
+16:01:26.240 [debug] handled notification client -> server textDocument/didChange in 230µs
+
+16:01:34.704 [debug] handled notification client -> server textDocument/didChange in 522µs
+
+16:01:34.857 [debug] handled notification client -> server textDocument/didChange in 442µs
+
+16:01:35.008 [debug] handled notification client -> server textDocument/didChange in 250µs
+
+16:01:35.139 [debug] handled notification client -> server textDocument/didChange in 260µs
+
+16:01:35.344 [debug] handled notification client -> server textDocument/didChange in 285µs
+
+16:01:35.560 [debug] handled notification client -> server textDocument/didChange in 261µs
+
+16:01:35.884 [debug] handled notification client -> server textDocument/didChange in 261µs
+
+16:01:36.007 [debug] handled notification client -> server textDocument/didChange in 260µs
+
+16:01:36.156 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+16:01:36.766 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+16:01:37.007 [debug] handled notification client -> server textDocument/didChange in 343µs
+
+16:01:37.160 [debug] handled notification client -> server textDocument/didChange in 249µs
+
+16:01:37.322 [debug] handled notification client -> server textDocument/didChange in 261µs
+
+16:01:37.484 [debug] handled notification client -> server textDocument/didChange in 238µs
+
+16:01:37.633 [debug] handled notification client -> server textDocument/didChange in 547µs
+
+16:01:37.643 [debug] handled notification client -> server textDocument/didChange in 232µs
+
+16:01:37.763 [debug] handled notification client -> server textDocument/didChange in 952µs
+
+16:01:41.074 [debug] handled notification client -> server textDocument/didChange in 242µs
+
+16:01:42.424 [debug] handled notification client -> server textDocument/didChange in 262µs
+
+16:01:42.561 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:02:07.163 [debug] handled notification client -> server textDocument/didChange in 286µs
+
+16:02:07.314 [debug] handled notification client -> server textDocument/didChange in 249µs
+
+16:02:07.466 [debug] handled notification client -> server textDocument/didChange in 357µs
+
+16:02:07.530 [debug] handled notification client -> server textDocument/didChange in 288µs
+
+16:02:07.897 [debug] handled notification client -> server textDocument/didChange in 230µs
+
+16:02:08.215 [debug] handled notification client -> server textDocument/didChange in 284µs
+
+16:02:08.365 [debug] handled notification client -> server textDocument/didChange in 247µs
+
+16:02:08.515 [debug] handled notification client -> server textDocument/didChange in 247µs
+
+16:02:09.450 [debug] handled notification client -> server textDocument/didChange in 294µs
+
+16:02:09.597 [debug] handled notification client -> server textDocument/didChange in 300µs
+
+16:02:10.005 [debug] handled notification client -> server textDocument/didChange in 275µs
+
+16:02:10.128 [debug] handled notification client -> server textDocument/didChange in 256µs
+
+16:02:10.230 [debug] handled notification client -> server textDocument/didChange in 282µs
+
+16:02:10.763 [debug] handled notification client -> server textDocument/didChange in 769µs
+
+16:02:10.912 [debug] handled notification client -> server textDocument/didChange in 265µs
+
+16:02:14.277 [debug] handled notification client -> server textDocument/didChange in 269µs
+
+16:02:14.338 [debug] handled notification client -> server textDocument/didChange in 405µs
+
+16:02:15.659 [debug] handled notification client -> server textDocument/didChange in 494µs
+
+16:02:15.808 [debug] handled notification client -> server textDocument/didChange in 253µs
+
+16:02:15.957 [debug] handled notification client -> server textDocument/didChange in 269µs
+
+16:02:16.107 [debug] handled notification client -> server textDocument/didChange in 274µs
+
+16:02:17.115 [debug] handled notification client -> server textDocument/didChange in 238µs
+
+16:02:17.254 [debug] handled notification client -> server textDocument/didChange in 252µs
+
+16:02:17.671 [debug] handled notification client -> server textDocument/didChange in 411µs
+
+16:02:17.730 [debug] handled notification client -> server textDocument/didChange in 375µs
+
+16:02:19.115 [debug] handled notification client -> server textDocument/didChange in 418µs
+
+16:02:20.721 [debug] handled notification client -> server textDocument/didChange in 404µs
+
+16:02:20.724 [debug] handled notification client -> server textDocument/didChange in 369µs
+
+16:02:21.727 [debug] handled notification client -> server textDocument/didChange in 310µs
+
+16:02:21.734 [debug] handled notification client -> server textDocument/didChange in 919µs
+
+16:02:23.273 [debug] handled notification client -> server textDocument/didChange in 275µs
+
+16:02:23.342 [debug] handled notification client -> server textDocument/didChange in 292µs
+
+16:02:23.491 [debug] handled notification client -> server textDocument/didChange in 361µs
+
+16:02:23.981 [debug] handled notification client -> server textDocument/didChange in 429µs
+
+16:02:24.957 [debug] handled notification client -> server textDocument/didChange in 415µs
+
+16:02:25.107 [debug] handled notification client -> server textDocument/didChange in 315µs
+
+16:02:26.261 [debug] handled notification client -> server textDocument/didChange in 390µs
+
+16:02:26.388 [debug] handled notification client -> server textDocument/didChange in 400µs
+
+16:02:26.713 [debug] handled notification client -> server textDocument/didChange in 431µs
+
+16:02:29.290 [debug] handled notification client -> server textDocument/didChange in 976µs
+
+16:02:34.596 [debug] handled notification client -> server textDocument/didChange in 251µs
+
+16:02:35.807 [debug] handled notification client -> server textDocument/didChange in 685µs
+
+16:02:37.445 [debug] handled notification client -> server textDocument/didChange in 372µs
+
+16:02:37.755 [debug] handled notification client -> server textDocument/didChange in 425µs
+
+16:02:38.699 [debug] handled notification client -> server textDocument/didChange in 262µs
+
+16:02:38.710 [debug] handled notification client -> server textDocument/didChange in 227µs
+
+16:02:39.109 [debug] handled notification client -> server textDocument/didChange in 270µs
+
+16:02:39.110 [debug] handled notification client -> server textDocument/didChange in 211µs
+
+16:02:40.120 [debug] handled notification client -> server textDocument/didChange in 280µs
+
+16:02:40.270 [debug] handled notification client -> server textDocument/didChange in 269µs
+
+16:02:41.169 [debug] handled notification client -> server textDocument/didChange in 267µs
+
+16:02:41.259 [debug] handled notification client -> server textDocument/didChange in 255µs
+
+16:02:42.572 [debug] handled notification client -> server textDocument/didChange in 272µs
+
+16:02:42.621 [debug] handled notification client -> server textDocument/didChange in 283µs
+
+16:02:42.772 [debug] handled notification client -> server textDocument/didChange in 304µs
+
+16:02:43.931 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:02:44.082 [debug] handled notification client -> server textDocument/didChange in 537µs
+
+16:02:44.232 [debug] handled notification client -> server textDocument/didChange in 917µs
+
+16:02:45.290 [debug] handled notification client -> server textDocument/didChange in 982µs
+
+16:02:45.394 [debug] handled notification client -> server textDocument/didChange in 233µs
+
+16:02:45.657 [debug] handled notification client -> server textDocument/didChange in 406µs
+
+16:02:45.739 [debug] handled notification client -> server textDocument/didChange in 328µs
+
+16:02:46.516 [debug] handled notification client -> server textDocument/didChange in 985µs
+
+16:03:03.536 [debug] handled notification client -> server textDocument/didChange in 244µs
+
+16:03:03.687 [debug] handled notification client -> server textDocument/didChange in 759µs
+
+16:03:03.835 [debug] handled notification client -> server textDocument/didChange in 244µs
+
+16:03:03.986 [debug] handled notification client -> server textDocument/didChange in 275µs
+
+16:03:04.016 [debug] handled notification client -> server textDocument/didChange in 245µs
+
+16:03:04.132 [debug] handled notification client -> server textDocument/didChange in 256µs
+
+16:03:05.174 [debug] handled notification client -> server textDocument/didChange in 236µs
+
+16:03:05.606 [debug] handled notification client -> server textDocument/didChange in 368µs
+
+16:03:07.876 [debug] handled notification client -> server textDocument/didChange in 527µs
+
+16:03:09.956 [debug] handled notification client -> server textDocument/didChange in 368µs
+
+16:03:16.336 [debug] handled notification client -> server textDocument/didChange in 264µs
+
+16:03:16.375 [debug] handled notification client -> server textDocument/didChange in 248µs
+
+16:03:20.999 [debug] handled notification client -> server textDocument/didChange in 235µs
+
+16:03:21.149 [debug] handled notification client -> server textDocument/didChange in 333µs
+
+16:03:21.993 [debug] handled notification client -> server textDocument/didChange in 237µs
+
+16:03:22.026 [debug] handled notification client -> server textDocument/didChange in 267µs
+
+16:03:22.471 [debug] handled notification client -> server textDocument/didChange in 240µs
+
+16:03:23.573 [debug] handled notification client -> server textDocument/didChange in 273µs
+
+16:03:23.723 [debug] handled notification client -> server textDocument/didChange in 259µs
+
+16:03:23.770 [debug] handled notification client -> server textDocument/didChange in 257µs
+
+16:03:24.315 [debug] handled notification client -> server textDocument/didChange in 366µs
+
+16:03:24.547 [debug] handled notification client -> server textDocument/didChange in 256µs
+
+16:03:25.467 [debug] handled notification client -> server textDocument/didChange in 255µs
+
+16:03:28.788 [debug] handled notification client -> server textDocument/didChange in 479µs
+
+16:03:29.662 [debug] handled notification client -> server textDocument/didChange in 352µs
+
+16:03:29.668 [debug] handled notification client -> server textDocument/didChange in 349µs
+
+16:03:29.788 [debug] handled notification client -> server textDocument/didChange in 371µs
+
+16:03:30.039 [debug] handled notification client -> server textDocument/didChange in 261µs
+
+16:03:30.188 [debug] handled notification client -> server textDocument/didChange in 355µs
+
+16:03:30.216 [debug] handled notification client -> server textDocument/didChange in 243µs
+
+16:03:32.285 [debug] handled notification client -> server textDocument/didChange in 233µs
+
+16:03:32.765 [debug] handled notification client -> server textDocument/didChange in 254µs
+
+16:03:32.914 [debug] handled notification client -> server textDocument/didChange in 260µs
+
+16:03:33.063 [debug] handled notification client -> server textDocument/didChange in 295µs
+
+16:03:33.819 [debug] handled notification client -> server textDocument/didChange in 233µs
+
+16:03:35.819 [debug] handled notification client -> server textDocument/didChange in 263µs
+
+16:03:35.880 [debug] handled notification client -> server textDocument/didChange in 242µs
+
+16:03:36.029 [debug] handled notification client -> server textDocument/didChange in 258µs
+
+16:03:36.477 [debug] handled notification client -> server textDocument/didChange in 229µs
+
+16:03:36.893 [debug] handled notification client -> server textDocument/didChange in 265µs
+
+16:03:37.945 [debug] handled notification client -> server textDocument/didChange in 248µs
+
+16:03:38.337 [debug] handled notification client -> server textDocument/didChange in 257µs
+
+16:03:39.395 [debug] handled notification client -> server textDocument/didChange in 250µs
+
+16:03:40.431 [debug] handled notification client -> server textDocument/didChange in 252µs
+
+16:03:40.573 [debug] handled notification client -> server textDocument/didChange in 461µs
+
+16:03:40.831 [debug] handled notification client -> server textDocument/didChange in 235µs
+
+16:03:40.893 [debug] handled notification client -> server textDocument/didChange in 274µs
+
+16:03:42.463 [debug] handled notification client -> server textDocument/didChange in 242µs
+
+16:03:42.509 [debug] handled notification client -> server textDocument/didChange in 300µs
+
+16:03:42.658 [debug] handled notification client -> server textDocument/didChange in 265µs
+
+16:03:44.007 [debug] handled notification client -> server textDocument/didChange in 239µs
+
+16:03:44.156 [debug] handled notification client -> server textDocument/didChange in 328µs
+
+16:03:44.733 [debug] handled notification client -> server textDocument/didChange in 247µs
+
+16:03:50.085 [debug] handled notification client -> server textDocument/didChange in 396µs
+
+16:03:50.821 [debug] handled notification client -> server textDocument/didChange in 242µs
+
+16:03:51.211 [debug] handled notification client -> server textDocument/didChange in 252µs
+
+16:03:54.493 [debug] handled notification client -> server textDocument/didChange in 284µs
+
+16:03:54.579 [debug] handled notification client -> server textDocument/didChange in 244µs
+
+16:03:54.783 [debug] handled notification client -> server textDocument/didChange in 291µs
+
+16:03:54.962 [debug] handled notification client -> server textDocument/didChange in 289µs
+
+16:04:00.813 [debug] handled notification client -> server textDocument/didChange in 406µs
+
+16:04:00.849 [debug] handled notification client -> server textDocument/didChange in 437µs
+
+16:04:00.998 [debug] handled notification client -> server textDocument/didChange in 466µs
+
+16:04:01.897 [debug] handled notification client -> server textDocument/didChange in 413µs
+
+16:04:02.046 [debug] handled notification client -> server textDocument/didChange in 403µs
+
+16:04:02.297 [debug] handled notification client -> server textDocument/didChange in 487µs
+
+16:04:04.677 [debug] handled notification client -> server textDocument/didChange in 990µs
+
+16:04:05.504 [debug] handled notification client -> server textDocument/didChange in 360µs
+
+16:04:06.832 [debug] handled notification client -> server textDocument/didChange in 279µs
+
+16:04:07.702 [debug] handled notification client -> server textDocument/didChange in 418µs
+
+16:04:07.809 [debug] handled notification client -> server textDocument/didChange in 402µs
+
+16:04:08.279 [debug] handled notification client -> server textDocument/didChange in 452µs
+
+16:04:08.342 [debug] handled notification client -> server textDocument/didChange in 422µs
+
+16:04:09.103 [debug] handled notification client -> server textDocument/didChange in 426µs
+
+16:04:09.172 [debug] handled notification client -> server textDocument/didChange in 927µs
+
+16:04:09.321 [debug] handled notification client -> server textDocument/didChange in 443µs
+
+16:04:09.660 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:04:09.808 [debug] handled notification client -> server textDocument/didChange in 320µs
+
+16:04:10.108 [debug] handled notification client -> server textDocument/didChange in 241µs
+
+16:04:10.257 [debug] handled notification client -> server textDocument/didChange in 470µs
+
+16:04:10.407 [debug] handled notification client -> server textDocument/didChange in 926µs
+
+16:04:12.630 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+16:04:14.721 id=2 [debug] handled request client -> server textDocument/formatting in 9ms
+
+16:04:14.748 id=197 [debug] sent request server -> client window/workDoneProgress/create
+
+16:04:14.749 [debug] handled notification client -> server textDocument/didSave in 3ms
+
+16:04:14.749 [debug] sent notification server -> client $/progress
+
+16:04:14.764 [debug] sent notification server -> client window/logMessage
+
+16:04:14.764 [info] Compiling 1 file (.ex)
+
+
+16:04:14.766 id=1762 [debug] sent request server -> client window/workDoneProgress/create
+
+16:04:14.768 [debug] sent notification server -> client window/logMessage
+
+16:04:14.769 [info]     warning: variable "encoded_code" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 12 │   def decode_nucleotide(encoded_code) do
+    │                         ~~~~~~~~~~~~
+    │
+    └─ (dna 0.1.0) lib/dna.ex:12:25: DNA.decode_nucleotide/1
+
+
+
+16:04:14.769 [debug] sent notification server -> client window/logMessage
+
+16:04:14.769 [info]     warning: variable "dna" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 16 │   def encode(dna) do
+    │              ~~~
+    │
+    └─ (dna 0.1.0) lib/dna.ex:16:14: DNA.encode/1
+
+
+
+16:04:14.770 [debug] sent notification server -> client window/logMessage
+
+16:04:14.770 [info]     warning: variable "dna" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 20 │   def decode(dna) do
+    │              ~~~
+    │
+    └─ (dna 0.1.0) lib/dna.ex:20:14: DNA.decode/1
+
+
+
+16:04:14.772 [debug] sent notification server -> client $/progress
+
+16:04:14.778 [debug] sent notification server -> client $/progress
+
+16:04:14.778 [debug] sent notification server -> client window/logMessage
+
+16:04:14.778 [info] Compiled dna-encoding!
+
+16:04:14.780 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:04:14.780 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:04:14.875 [debug] sent notification server -> client $/progress
+
+16:04:38.070 [debug] handled notification client -> server textDocument/didChange in 406µs
+
+16:04:39.715 [debug] handled notification client -> server textDocument/didChange in 355µs
+
+16:04:39.852 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:04:46.872 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:04:47.036 [debug] handled notification client -> server textDocument/didChange in 333µs
+
+16:04:47.185 [debug] handled notification client -> server textDocument/didChange in 396µs
+
+16:04:47.234 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+16:04:47.819 [debug] handled notification client -> server textDocument/didChange in 261µs
+
+16:04:47.968 [debug] handled notification client -> server textDocument/didChange in 287µs
+
+16:04:48.060 [debug] handled notification client -> server textDocument/didChange in 274µs
+
+16:04:48.465 [debug] handled notification client -> server textDocument/didChange in 243µs
+
+16:04:48.614 [debug] handled notification client -> server textDocument/didChange in 373µs
+
+16:04:48.815 [debug] handled notification client -> server textDocument/didChange in 268µs
+
+16:04:48.964 [debug] handled notification client -> server textDocument/didChange in 306µs
+
+16:04:49.115 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:04:51.564 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+16:04:51.711 [debug] handled notification client -> server textDocument/didChange in 284µs
+
+16:04:52.262 [debug] handled notification client -> server textDocument/didChange in 267µs
+
+16:04:52.409 [debug] handled notification client -> server textDocument/didChange in 257µs
+
+16:04:52.769 [debug] handled notification client -> server textDocument/didChange in 369µs
+
+16:04:52.882 [debug] handled notification client -> server textDocument/didChange in 250µs
+
+16:04:52.978 [debug] handled notification client -> server textDocument/didChange in 247µs
+
+16:04:53.800 [debug] handled notification client -> server textDocument/didChange in 284µs
+
+16:04:53.948 [debug] handled notification client -> server textDocument/didChange in 280µs
+
+16:04:57.469 [debug] handled notification client -> server textDocument/didChange in 253µs
+
+16:04:57.494 [debug] handled notification client -> server textDocument/didChange in 343µs
+
+16:04:57.645 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:04:57.793 [debug] handled notification client -> server textDocument/didChange in 281µs
+
+16:04:58.211 [debug] handled notification client -> server textDocument/didChange in 312µs
+
+16:04:58.699 [debug] handled notification client -> server textDocument/didChange in 293µs
+
+16:04:59.383 [debug] handled notification client -> server textDocument/didChange in 356µs
+
+16:04:59.474 [debug] handled notification client -> server textDocument/didChange in 253µs
+
+16:04:59.793 [debug] handled notification client -> server textDocument/didChange in 343µs
+
+16:04:59.873 [debug] handled notification client -> server textDocument/didChange in 294µs
+
+16:05:05.645 [debug] handled notification client -> server textDocument/didChange in 345µs
+
+16:05:05.697 [debug] handled notification client -> server textDocument/didChange in 311µs
+
+16:05:06.789 [debug] handled notification client -> server textDocument/didChange in 358µs
+
+16:05:06.791 [debug] handled notification client -> server textDocument/didChange in 213µs
+
+16:05:07.573 [debug] handled notification client -> server textDocument/didChange in 383µs
+
+16:05:07.574 [debug] handled notification client -> server textDocument/didChange in 218µs
+
+16:05:09.689 [debug] handled notification client -> server textDocument/didChange in 433µs
+
+16:05:09.750 [debug] handled notification client -> server textDocument/didChange in 315µs
+
+16:05:11.980 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:05:12.129 [debug] handled notification client -> server textDocument/didChange in 353µs
+
+16:05:12.622 [debug] handled notification client -> server textDocument/didChange in 359µs
+
+16:05:12.772 [debug] handled notification client -> server textDocument/didChange in 287µs
+
+16:05:13.484 [debug] handled notification client -> server textDocument/didChange in 3ms
+
+16:05:13.596 [debug] handled notification client -> server textDocument/didChange in 422µs
+
+16:05:13.821 [debug] handled notification client -> server textDocument/didChange in 696µs
+
+16:05:13.876 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:05:14.383 [debug] handled notification client -> server textDocument/didChange in 370µs
+
+16:05:17.944 [debug] handled notification client -> server textDocument/didChange in 220µs
+
+16:05:19.301 [debug] handled notification client -> server textDocument/didChange in 997µs
+
+16:05:19.340 [debug] handled notification client -> server textDocument/didChange in 336µs
+
+16:05:22.908 [debug] handled notification client -> server textDocument/didChange in 361µs
+
+16:05:23.218 [debug] handled notification client -> server textDocument/didChange in 331µs
+
+16:05:23.265 [debug] handled notification client -> server textDocument/didChange in 386µs
+
+16:05:23.852 [debug] handled notification client -> server textDocument/didChange in 462µs
+
+16:05:23.863 [debug] handled notification client -> server textDocument/didChange in 207µs
+
+16:05:24.606 [debug] handled notification client -> server textDocument/didChange in 305µs
+
+16:05:24.608 [debug] handled notification client -> server textDocument/didChange in 258µs
+
+16:05:25.336 [debug] handled notification client -> server textDocument/didChange in 252µs
+
+16:05:25.488 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:05:26.108 [debug] handled notification client -> server textDocument/didChange in 374µs
+
+16:05:26.258 [debug] handled notification client -> server textDocument/didChange in 360µs
+
+16:05:26.310 [debug] handled notification client -> server textDocument/didChange in 392µs
+
+16:05:27.168 [debug] handled notification client -> server textDocument/didChange in 241µs
+
+16:05:27.247 [debug] handled notification client -> server textDocument/didChange in 300µs
+
+16:05:27.396 [debug] handled notification client -> server textDocument/didChange in 279µs
+
+16:05:27.766 [debug] handled notification client -> server textDocument/didChange in 277µs
+
+16:05:28.180 [debug] handled notification client -> server textDocument/didChange in 281µs
+
+16:05:28.330 [debug] handled notification client -> server textDocument/didChange in 249µs
+
+16:05:29.388 [debug] handled notification client -> server textDocument/didChange in 259µs
+
+16:05:29.574 [debug] handled notification client -> server textDocument/didChange in 237µs
+
+16:05:29.872 [debug] handled notification client -> server textDocument/didChange in 314µs
+
+16:05:29.955 [debug] handled notification client -> server textDocument/didChange in 301µs
+
+16:05:30.430 [debug] handled notification client -> server textDocument/didChange in 247µs
+
+16:05:31.558 [debug] handled notification client -> server textDocument/didChange in 305µs
+
+16:05:32.514 [debug] handled notification client -> server textDocument/didChange in 241µs
+
+16:05:32.527 [debug] handled notification client -> server textDocument/didChange in 767µs
+
+16:05:33.134 [debug] handled notification client -> server textDocument/didChange in 318µs
+
+16:05:33.136 [debug] handled notification client -> server textDocument/didChange in 200µs
+
+16:05:34.222 [debug] handled notification client -> server textDocument/didChange in 377µs
+
+16:05:34.273 [debug] handled notification client -> server textDocument/didChange in 237µs
+
+16:05:34.421 [debug] handled notification client -> server textDocument/didChange in 297µs
+
+16:05:35.424 [debug] handled notification client -> server textDocument/didChange in 288µs
+
+16:05:35.574 [debug] handled notification client -> server textDocument/didChange in 363µs
+
+16:05:35.814 [debug] handled notification client -> server textDocument/didChange in 271µs
+
+16:05:36.700 [debug] handled notification client -> server textDocument/didChange in 244µs
+
+16:05:36.882 [debug] handled notification client -> server textDocument/didChange in 284µs
+
+16:05:37.130 [debug] handled notification client -> server textDocument/didChange in 387µs
+
+16:05:37.194 [debug] handled notification client -> server textDocument/didChange in 268µs
+
+16:05:38.382 [debug] handled notification client -> server textDocument/didChange in 285µs
+
+16:05:38.826 [debug] handled notification client -> server textDocument/didChange in 247µs
+
+16:05:39.356 [debug] handled notification client -> server textDocument/didChange in 287µs
+
+16:05:39.369 [debug] handled notification client -> server textDocument/didChange in 957µs
+
+16:05:40.010 [debug] handled notification client -> server textDocument/didChange in 286µs
+
+16:05:40.011 [debug] handled notification client -> server textDocument/didChange in 964µs
+
+16:05:41.080 [debug] handled notification client -> server textDocument/didChange in 403µs
+
+16:05:41.128 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:05:41.278 [debug] handled notification client -> server textDocument/didChange in 986µs
+
+16:05:42.294 [debug] handled notification client -> server textDocument/didChange in 3ms
+
+16:05:42.444 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:05:42.699 [debug] handled notification client -> server textDocument/didChange in 280µs
+
+16:05:42.849 [debug] handled notification client -> server textDocument/didChange in 675µs
+
+16:05:42.997 [debug] handled notification client -> server textDocument/didChange in 322µs
+
+16:05:43.562 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:05:43.817 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:05:44.076 [debug] handled notification client -> server textDocument/didChange in 550µs
+
+16:05:44.129 [debug] handled notification client -> server textDocument/didChange in 607µs
+
+16:05:44.986 [debug] handled notification client -> server textDocument/didChange in 954µs
+
+16:05:45.646 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:05:47.651 id=3 [debug] handled request client -> server textDocument/formatting in 2ms
+
+16:05:47.677 id=229 [debug] sent request server -> client window/workDoneProgress/create
+
+16:05:47.677 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+16:05:47.678 [debug] sent notification server -> client $/progress
+
+16:05:47.686 [debug] sent notification server -> client window/logMessage
+
+16:05:47.686 [info] Compiling 1 file (.ex)
+
+
+16:05:47.687 id=261 [debug] sent request server -> client window/workDoneProgress/create
+
+16:05:47.688 [debug] sent notification server -> client $/progress
+
+16:05:47.692 [debug] sent notification server -> client window/logMessage
+
+16:05:47.692 [info]     warning: variable "dna" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 22 │   def encode(dna) do
+    │              ~~~
+    │
+    └─ (dna 0.1.0) lib/dna.ex:22:14: DNA.encode/1
+
+
+
+16:05:47.692 [debug] sent notification server -> client window/logMessage
+
+16:05:47.692 [info]     warning: variable "dna" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    │
+ 26 │   def decode(dna) do
+    │              ~~~
+    │
+    └─ (dna 0.1.0) lib/dna.ex:26:14: DNA.decode/1
+
+
+
+16:05:47.701 [debug] sent notification server -> client $/progress
+
+16:05:47.701 [debug] sent notification server -> client window/logMessage
+
+16:05:47.701 [info] Compiled dna-encoding!
+
+16:05:47.701 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:05:47.702 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:05:47.797 [debug] sent notification server -> client $/progress
+
+16:05:55.021 [debug] handled notification client -> server textDocument/didChange in 409µs
+
+16:05:56.084 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:05:56.222 [debug] handled notification client -> server textDocument/didChange in 345µs
+
+16:05:57.186 [debug] handled notification client -> server textDocument/didChange in 671µs
+
+16:05:57.334 [debug] handled notification client -> server textDocument/didChange in 490µs
+
+16:05:57.484 [debug] handled notification client -> server textDocument/didChange in 315µs
+
+16:05:57.763 [debug] handled notification client -> server textDocument/didChange in 515µs
+
+16:05:57.932 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:05:58.080 [debug] handled notification client -> server textDocument/didChange in 313µs
+
+16:05:58.230 [debug] handled notification client -> server textDocument/didChange in 402µs
+
+16:05:58.439 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:05:58.441 [debug] handled notification client -> server textDocument/didChange in 565µs
+
+16:05:59.948 [debug] handled notification client -> server textDocument/didChange in 945µs
+
+16:05:59.952 [debug] handled notification client -> server textDocument/didChange in 264µs
+
+16:06:00.175 [debug] handled notification client -> server textDocument/didChange in 297µs
+
+16:06:00.533 [debug] handled notification client -> server textDocument/didChange in 461µs
+
+16:06:00.684 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:06:01.777 [debug] handled notification client -> server textDocument/didChange in 439µs
+
+16:06:02.843 [debug] handled notification client -> server textDocument/didChange in 374µs
+
+16:06:04.008 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:06:04.157 [debug] handled notification client -> server textDocument/didChange in 327µs
+
+16:06:04.306 [debug] handled notification client -> server textDocument/didChange in 337µs
+
+16:06:04.566 [debug] handled notification client -> server textDocument/didChange in 514µs
+
+16:06:04.570 [debug] handled notification client -> server textDocument/didChange in 411µs
+
+16:06:05.077 [debug] handled notification client -> server textDocument/didChange in 323µs
+
+16:06:05.228 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:06:05.372 [debug] handled notification client -> server textDocument/didChange in 229µs
+
+16:06:05.484 [debug] handled notification client -> server textDocument/didChange in 602µs
+
+16:06:12.975 [debug] handled notification client -> server textDocument/didChange in 286µs
+
+16:06:14.920 [debug] handled notification client -> server textDocument/didChange in 270µs
+
+16:06:14.922 [debug] handled notification client -> server textDocument/didChange in 992µs
+
+16:06:14.926 id=4 [debug] handled request client -> server textDocument/formatting in 2ms
+
+16:06:14.951 id=293 [debug] sent request server -> client window/workDoneProgress/create
+
+16:06:14.951 [debug] handled notification client -> server textDocument/didSave in 724µs
+
+16:06:14.955 [debug] sent notification server -> client $/progress
+
+16:06:14.957 [debug] sent notification server -> client window/logMessage
+
+16:06:14.958 [info] Compiling 1 file (.ex)
+
+
+16:06:14.960 id=325 [debug] sent request server -> client window/workDoneProgress/create
+
+16:06:14.961 [debug] sent notification server -> client $/progress
+
+16:06:14.977 [debug] sent notification server -> client window/logMessage
+
+16:06:14.977 [info] Generated dna app
+
+
+16:06:14.979 [debug] sent notification server -> client $/progress
+
+16:06:14.979 [debug] sent notification server -> client window/logMessage
+
+16:06:14.979 [info] Compiled dna-encoding!
+
+16:06:14.980 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:06:14.980 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:06:15.073 [debug] sent notification server -> client $/progress
+
+16:06:15.844 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:06:16.838 id=5 [debug] handled request client -> server textDocument/formatting in 1ms
+
+16:06:16.874 id=357 [debug] sent request server -> client window/workDoneProgress/create
+
+16:06:16.874 [debug] handled notification client -> server textDocument/didSave in 871µs
+
+16:06:16.877 [debug] sent notification server -> client $/progress
+
+16:06:16.881 [debug] sent notification server -> client window/logMessage
+
+16:06:16.882 [info] Compiling 1 file (.ex)
+
+
+16:06:16.883 id=389 [debug] sent request server -> client window/workDoneProgress/create
+
+16:06:16.885 [debug] sent notification server -> client $/progress
+
+16:06:16.899 [debug] sent notification server -> client $/progress
+
+16:06:16.899 [debug] sent notification server -> client window/logMessage
+
+16:06:16.899 [info] Compiled dna-encoding!
+
+16:06:16.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:06:16.900 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:06:16.994 [debug] sent notification server -> client $/progress
+
+16:06:48.886 [debug] handled notification client -> server textDocument/didChange in 4ms
+
+16:06:49.031 [debug] handled notification client -> server textDocument/didChange in 372µs
+
+16:06:49.946 [debug] handled notification client -> server textDocument/didChange in 392µs
+
+16:06:49.948 [debug] handled notification client -> server textDocument/didChange in 270µs
+
+16:06:50.013 [debug] handled notification client -> server textDocument/didChange in 280µs
+
+16:06:55.566 [debug] handled notification client -> server textDocument/didChange in 283µs
+
+16:06:55.719 [debug] handled notification client -> server textDocument/didChange in 3ms
+
+16:06:55.940 [debug] handled notification client -> server textDocument/didChange in 296µs
+
+16:06:55.942 [debug] handled notification client -> server textDocument/didChange in 745µs
+
+16:06:55.981 [debug] handled notification client -> server textDocument/didChange in 264µs
+
+16:06:59.716 [debug] handled notification client -> server textDocument/didChange in 351µs
+
+16:07:00.956 [debug] handled notification client -> server textDocument/didChange in 333µs
+
+16:07:05.776 [debug] handled notification client -> server textDocument/didChange in 346µs
+
+16:07:06.950 [debug] handled notification client -> server textDocument/didChange in 328µs
+
+16:07:09.356 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:07:09.459 [debug] handled notification client -> server textDocument/didChange in 883µs
+
+16:07:10.221 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:07:11.126 [debug] handled notification client -> server textDocument/didChange in 417µs
+
+16:07:11.651 [debug] handled notification client -> server textDocument/didChange in 334µs
+
+16:07:12.180 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:07:16.622 [debug] handled notification client -> server textDocument/didChange in 279µs
+
+16:07:16.752 [debug] handled notification client -> server textDocument/didChange in 365µs
+
+16:07:17.098 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:07:17.921 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:07:17.948 [debug] handled notification client -> server textDocument/didChange in 838µs
+
+16:07:24.277 [debug] handled notification client -> server textDocument/didChange in 361µs
+
+16:07:24.322 [debug] handled notification client -> server textDocument/didChange in 753µs
+
+16:07:25.447 id=6 [debug] handled request client -> server textDocument/formatting in 3ms
+
+16:07:25.462 id=421 [debug] sent request server -> client window/workDoneProgress/create
+
+16:07:25.463 [debug] handled notification client -> server textDocument/didSave in 671µs
+
+16:07:25.463 [debug] sent notification server -> client $/progress
+
+16:07:25.468 [debug] sent notification server -> client $/progress
+
+16:07:25.468 [debug] sent notification server -> client window/logMessage
+
+16:07:25.468 [info] Compiled dna-encoding!
+
+16:07:25.468 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:07:25.469 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:09:03.133 [debug] handled notification client -> server textDocument/didChange in 359µs
+
+16:09:03.590 [debug] handled notification client -> server textDocument/didChange in 3ms
+
+16:09:03.749 [debug] handled notification client -> server textDocument/didChange in 380µs
+
+16:09:03.919 [debug] handled notification client -> server textDocument/didChange in 741µs
+
+16:09:04.069 [debug] handled notification client -> server textDocument/didChange in 282µs
+
+16:09:04.930 [debug] handled notification client -> server textDocument/didChange in 249µs
+
+16:09:05.059 [debug] handled notification client -> server textDocument/didChange in 345µs
+
+16:09:05.208 [debug] handled notification client -> server textDocument/didChange in 249µs
+
+16:09:05.358 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:05.797 [debug] handled notification client -> server textDocument/didChange in 295µs
+
+16:09:05.946 [debug] handled notification client -> server textDocument/didChange in 295µs
+
+16:09:06.097 [debug] handled notification client -> server textDocument/didChange in 770µs
+
+16:09:06.337 [debug] handled notification client -> server textDocument/didChange in 418µs
+
+16:09:06.791 [debug] handled notification client -> server textDocument/didChange in 238µs
+
+16:09:07.002 [debug] handled notification client -> server textDocument/didChange in 258µs
+
+16:09:07.151 [debug] handled notification client -> server textDocument/didChange in 277µs
+
+16:09:07.300 [debug] handled notification client -> server textDocument/didChange in 325µs
+
+16:09:07.451 [debug] handled notification client -> server textDocument/didChange in 271µs
+
+16:09:07.835 [debug] handled notification client -> server textDocument/didChange in 832µs
+
+16:09:07.983 [debug] handled notification client -> server textDocument/didChange in 355µs
+
+16:09:08.499 [debug] handled notification client -> server textDocument/didChange in 920µs
+
+16:09:08.688 [debug] handled notification client -> server textDocument/didChange in 896µs
+
+16:09:08.835 [debug] handled notification client -> server textDocument/didChange in 255µs
+
+16:09:08.991 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:09.140 [debug] handled notification client -> server textDocument/didChange in 909µs
+
+16:09:09.181 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:09:09.253 [debug] handled notification client -> server textDocument/didChange in 307µs
+
+16:09:09.556 [debug] handled notification client -> server textDocument/didChange in 262µs
+
+16:09:09.560 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:11.380 [debug] handled notification client -> server textDocument/didChange in 936µs
+
+16:09:11.529 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:12.966 [debug] handled notification client -> server textDocument/didChange in 406µs
+
+16:09:13.069 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:17.160 [debug] handled notification client -> server textDocument/didChange in 330µs
+
+16:09:17.162 [debug] handled notification client -> server textDocument/didChange in 261µs
+
+16:09:17.214 [debug] handled notification client -> server textDocument/didChange in 292µs
+
+16:09:21.263 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:21.328 [debug] handled notification client -> server textDocument/didChange in 259µs
+
+16:09:21.430 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+16:09:21.512 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:21.714 [debug] handled notification client -> server textDocument/didChange in 329µs
+
+16:09:21.831 [debug] handled notification client -> server textDocument/didChange in 365µs
+
+16:09:23.706 [debug] handled notification client -> server textDocument/didChange in 277µs
+
+16:09:23.753 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+16:09:23.900 [debug] handled notification client -> server textDocument/didChange in 347µs
+
+16:09:24.536 [debug] handled notification client -> server textDocument/didChange in 339µs
+
+16:09:24.686 [debug] handled notification client -> server textDocument/didChange in 292µs
+
+16:09:24.836 [debug] handled notification client -> server textDocument/didChange in 328µs
+
+16:09:26.520 [debug] handled notification client -> server textDocument/didChange in 420µs
+
+16:09:26.522 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:26.525 id=7 [debug] handled request client -> server textDocument/formatting in 3ms
+
+16:09:26.556 id=453 [debug] sent request server -> client window/workDoneProgress/create
+
+16:09:26.557 [debug] handled notification client -> server textDocument/didSave in 779µs
+
+16:09:26.560 [debug] sent notification server -> client $/progress
+
+16:09:26.566 [debug] sent notification server -> client window/logMessage
+
+16:09:26.567 [info] Compiling 1 file (.ex)
+
+
+16:09:26.568 id=485 [debug] sent request server -> client window/workDoneProgress/create
+
+16:09:26.568 [debug] sent notification server -> client $/progress
+
+16:09:26.585 [debug] sent notification server -> client $/progress
+
+16:09:26.585 [debug] sent notification server -> client window/logMessage
+
+16:09:26.585 [info] Compiled dna-encoding!
+
+16:09:26.585 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:09:26.586 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+16:09:26.680 [debug] sent notification server -> client $/progress
+
+16:09:53.072 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:54.166 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:54.266 [debug] handled notification client -> server textDocument/didChange in 288µs
+
+16:09:54.802 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+16:09:55.382 [debug] handled notification client -> server textDocument/didChange in 3ms
+
+16:09:55.383 [debug] handled notification client -> server textDocument/didChange in 224µs
+
+17:17:59.848 id=8 [debug] handled request client -> server textDocument/formatting in 1ms
+
+17:17:59.885 id=1794 [debug] sent request server -> client window/workDoneProgress/create
+
+17:17:59.885 [debug] handled notification client -> server textDocument/didSave in 2ms
+
+17:17:59.886 [debug] sent notification server -> client $/progress
+
+17:17:59.891 [debug] sent notification server -> client window/logMessage
+
+17:17:59.892 [info] Compiling 1 file (.ex)
+
+
+17:17:59.894 id=517 [debug] sent request server -> client window/workDoneProgress/create
+
+17:17:59.895 [debug] sent notification server -> client $/progress
+
+17:17:59.912 [debug] sent notification server -> client $/progress
+
+17:17:59.912 [debug] sent notification server -> client window/logMessage
+
+17:17:59.912 [info] Compiled dna-encoding!
+
+17:17:59.912 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+17:17:59.913 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+17:18:00.006 [debug] sent notification server -> client $/progress
