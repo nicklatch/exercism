@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+
+class Yacht {
+
+    private static final List<YachtCategory> numValues = Arrays
+            .asList(YachtCategory.values())
+            .stream()
+            .filter(cat -> cat == YachtCategory.ONES
+                    || cat == YachtCategory.TWOS
+                    || cat == YachtCategory.THREES
+                    || cat == YachtCategory.FOURS
+                    || cat == YachtCategory.FIVES
+                    || cat == YachtCategory.SIXES)
+            .toList();
+
+    private final List<Integer> dice = new ArrayList<>();
+    private final YachtCategory yachtCategory;
+
+    Yacht(int[] dice, YachtCategory yachtCategory) {
+        this.yachtCategory = yachtCategory;
+        for (int die : dice) {
+            this.dice.add(die);
+        }
+    }
+
+    int score() {
+        return switch (this.yachtCategory) {
+            case YachtCategory yc when numValues.contains(yc) -> sumCategory(this.dice, yc.ordinal());
+            case YACHT -> new HashSet<Integer>(this.dice).size() == 1 ? 50 : 0;
+            case FULL_HOUSE -> new HashSet<Integer>(this.dice).size() == 3 ? sumOfAllDice(this.dice) : 0;
+            case CHOICE -> sumOfAllDice();
+            case LITTLE_STRAIGHT, BIG_STRAIGHT -> isStraight() ? 30 : 0;
+            case FOUR_OF_A_KIND -> 0;
+            default -> throw new IllegalArgumentException("Unexpected value: " + this.yachtCategory);
+        };
+    }
+
+    private int sumCategory(List<Integer> dice, int target) {
+        return target * dice
+                .stream()
+                .filter(die -> die == (Integer) target).toList().size();
+    }
+
+    private int sumOfAllDice(List<Integer> dice) {
+        return dice.stream().mapToInt(a -> a).sum();
+    }
+
+    private boolean isStraight() {
+        var little = Arrays.asList(1, 2, 3, 4, 5);
+        var big = Arrays.asList(2, 3, 4, 5, 6);
+
+        return this.dice.containsAll(little) && this.yachtCategory == YachtCategory.LITTLE_STRAIGHT
+                || this.dice.containsAll(big) && this.yachtCategory == YachtCategory.BIG_STRAIGHT;
+    }
+
+    // TODO: Type me
+    private HashMap<Integer, Integer> getOccurenceCount() {
+        HashMap<Integer, Integer> countMap = new HashMap<>();
+        new HashSet<>(this.dice).forEach(die -> countMap.put(die, Collections.frequency(this.dice, die)));
+        return countMap;
+    }
+
+}
